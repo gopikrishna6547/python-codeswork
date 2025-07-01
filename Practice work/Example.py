@@ -1,0 +1,1 @@
+print("this folder is for the practice work")
