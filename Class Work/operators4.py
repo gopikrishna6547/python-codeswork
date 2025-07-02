@@ -11,8 +11,9 @@ print("Exponentiation(**):",a**b)#Exponentiation(**): 10240000000000
 
 #2.COMPARISION OPERATORS
 print("Equal to(==):",a==b)#Equal to(==): False
-print("Not Equal to(!=);",a!=b)
-print("Greater than(>):",a>b)
-print("Less than(<):",a<b)
-print("Greater than or Equal to(>=):",a>=b)#
-print("Lesser than or Equal to(<=):",a<=b)#
+print("Not Equal to(!=);",a!=b)#Not Equal to(!=); True
+print("Greater than(>):",a>b)#Greater than(>): True
+print("Less than(<):",a<b)#Less than(<): False
+print("Greater than or Equal to(>=):",a>=b)#Greater than or Equal to(>=): True
+print("Lesser than or Equal to(<=):",a<=b)#Lesser than or Equal to(<=): False
+
