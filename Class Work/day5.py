@@ -24,3 +24,11 @@ text2="hello-world"#Splits into a 3-part tuple at first sep.
 print(text2.partition("-"))
 
 print(text2.rpartition("-"))# Splits into a3-part tuple at last sep.
+
+#7. Whitespace & Trimming Methods
+
+print("  hello ".strip()) #Removes leading and trailing characters (default: spaces).
+
+print("----hello".lstrip("-"))#Removes leading characters.
+
+print("hello----".rstrip("-")) #Removes trailing characters.
