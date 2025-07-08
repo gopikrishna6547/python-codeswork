@@ -69,7 +69,7 @@ print(" count():", "banana".count("a"))
 
 # String Testing (Boolean)
 print(" startswith():", "python".startswith("py"))
-print("endswith():", "python".endswith("on"))
+print(" endswith():", "python".endswith("on"))
 print(" isalpha():", "Hello".isalpha())
 print(" isalnum():", "abc123".isalnum())
 print(" islower():", "hello".islower())
