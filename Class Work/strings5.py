@@ -1,19 +1,20 @@
-
-# String Operations
+# -----------------------------------------
+# String Operations Demo
+# -----------------------------------------
 
 # 1. Concatenation
 str1 = "Hello"
 str2 = "World"
 result = str1 + " " + str2
-print("# Concatenation:", result)
+print(" Concatenation:", result)
 
 # 2. Repetition
-print("# Repetition:", "Python! " * 3)
+print(" Repetition:", "Python! " * 3)
 
 # 3. Indexing
 text = "Python"
 print(" Indexing [0]:", text[0])
-print("Indexing [-1]:", text[-1])
+print(" Indexing [-1]:", text[-1])
 
 # 4. Slicing
 print(" Slicing [0:3]:", text[0:3])
@@ -24,22 +25,24 @@ print(" Slicing [2:]:", text[2:])
 print(" Membership 'Pyt' in text:", 'Pyt' in text)
 print(" Membership 'Java' not in text:", 'Java' not in text)
 
-
+# -----------------------------------------
 # Built-in String Functions
+# -----------------------------------------
 
 sample = "Hello World"
 
 print(" len():", len(sample))
-print("max():", max("abcXYZ"))  # Based on ASCII
-print("min():", min("abcXYZ"))
-print("sorted():", sorted("python"))
+print(" max():", max("abcXYZ"))  # Based on ASCII
+print(" min():", min("abcXYZ"))
+print(" sorted():", sorted("python"))
 
 # chr() and ord()
-print("ord('A'):", ord('A'))
-print("chr(97):", chr(97))
+print(" ord('A'):", ord('A'))
+print(" chr(97):", chr(97))
 
-
+# -----------------------------------------
 # String Methods
+# -----------------------------------------
 
 # Case Conversion
 print(" upper():", "hello".upper())
@@ -66,7 +69,7 @@ print(" count():", "banana".count("a"))
 
 # String Testing (Boolean)
 print(" startswith():", "python".startswith("py"))
-print(" endswith():", "python".endswith("on"))
+print("endswith():", "python".endswith("on"))
 print(" isalpha():", "Hello".isalpha())
 print(" isalnum():", "abc123".isalnum())
 print(" islower():", "hello".islower())
