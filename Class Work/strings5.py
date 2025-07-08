@@ -1,79 +1,92 @@
 # -----------------------------------------
-# String Operations Demo
+# Basic String Operations
 # -----------------------------------------
 
 # 1. Concatenation
 str1 = "Hello"
 str2 = "World"
 result = str1 + " " + str2
-print(" Concatenation:", result)
+print(result)  # Output: Hello World
 
 # 2. Repetition
-print(" Repetition:", "Python! " * 3)
+print("Python! " * 3)  # Output: Python! Python! Python!
 
 # 3. Indexing
 text = "Python"
-print(" Indexing [0]:", text[0])
-print(" Indexing [-1]:", text[-1])
+print(text[0])    # Output: P (1st character)
+print(text[-1])   # Output: n (last character)
 
 # 4. Slicing
-print(" Slicing [0:3]:", text[0:3])
-print(" Slicing [:4]:", text[:4])
-print(" Slicing [2:]:", text[2:])
+print(text[0:3])  # Output: Pyt (from index 0 to 2)
+print(text[:4])   # Output: Pyth (default start is 0)
+print(text[2:])   # Output: thon (from index 2 to end)
 
 # 5. Membership
-print(" Membership 'Pyt' in text:", 'Pyt' in text)
-print(" Membership 'Java' not in text:", 'Java' not in text)
+print('Pyt' in text)       # Output: True
+print('Java' not in text)  # Output: True
 
 # -----------------------------------------
 # Built-in String Functions
 # -----------------------------------------
 
-sample = "Hello World"
+text = "Hello World"
 
-print(" len():", len(sample))
-print(" max():", max("abcXYZ"))  # Based on ASCII
-print(" min():", min("abcXYZ"))
-print(" sorted():", sorted("python"))
+# 1. len()
+print(len(text))  # Output: 11
 
-# chr() and ord()
-print(" ord('A'):", ord('A'))
-print(" chr(97):", chr(97))
+# 2. max() and min()
+print(max("abcXYZ"))  # Output: 'c' (highest ASCII)
+print(min("abcXYZ"))  # Output: 'X' (lowest ASCII)
+
+# 3. sorted()
+print(sorted("python"))  # Output: ['h', 'n', 'o', 'p', 't', 'y']
+
+# 4. chr() and ord()
+print(ord('A'))   # Output: 65
+print(chr(97))    # Output: 'a'
 
 # -----------------------------------------
-# String Methods
+# String Methods - Case Conversion
 # -----------------------------------------
 
-# Case Conversion
-print(" upper():", "hello".upper())
-print(" lower():", "HELLO".lower())
-print(" capitalize():", "python".capitalize())
-print(" title():", "hello world".title())
-print(" swapcase():", "PyThOn".swapcase())
-print(" casefold():", "ß".casefold())
+print("hello".upper())         # HELLO
+print("HELLO".lower())         # hello
+print("python".capitalize())   # Python
+print("hello world".title())   # Hello World
+print("PyThOn".swapcase())     # pYtHoN
+print("ß".casefold())          # ss
 
-# Alignment & Formatting
-print(" center():", "python".center(10, "*"))
-print(" ljust():", "py".ljust(5, "-"))
-print(" rjust():", "py".rjust(5, "-"))
-print(" zfill():", "42".zfill(5))
-print(" format():", "Name: {}, Age: {}".format("Tom", 25))
-print(" format_map():", "{name} is {age}".format_map({'name': 'Tom', 'age': 25}))
+# -----------------------------------------
+# Alignment & Formatting Methods
+# -----------------------------------------
 
+print("python".center(10, "*"))                     # *python**
+print("py".ljust(5, "-"))                           # py---
+print("py".rjust(5, "-"))                           # ---py
+print("42".zfill(5))                                # 00042
+print("Name: {}, Age: {}".format("Tom", 25))        # Name: Tom, Age: 25
+print("{name} is {age}".format_map({'name': 'Tom', 'age': 25}))  # Tom is 25
+
+# -----------------------------------------
 # Search & Find Methods
-print(" find():", "hello".find("l"))
-print(" rfind():", "hello".rfind("l"))
-print(" index():", "hello".index("e"))
-print(" rindex():", "hello".rindex("l"))
-print(" count():", "banana".count("a"))
+# -----------------------------------------
 
-# String Testing (Boolean)
-print(" startswith():", "python".startswith("py"))
-print(" endswith():", "python".endswith("on"))
-print(" isalpha():", "Hello".isalpha())
-print(" isalnum():", "abc123".isalnum())
-print(" islower():", "hello".islower())
-print(" isupper():", "HELLO".isupper())
-print(" isspace():", " ".isspace())
-print(" istitle():", "Hello World".istitle())
-print(" isidentifier():", "my_var".isidentifier())
+print("hello".find("l"))       # 2
+print("hello".rfind("l"))      # 3
+print("hello".index("e"))      # 1
+print("hello".rindex("l"))     # 3
+print("banana".count("a"))     # 3
+
+# -----------------------------------------
+# String Testing Methods (Boolean)
+# -----------------------------------------
+
+print("python".startswith("py"))   # True
+print("python".endswith("on"))     # True
+print("Hello".isalpha())           # True
+print("abc123".isalnum())          # True
+print("hello".islower())           # True
+print("HELLO".isupper())           # True
+print(" ".isspace())               # True
+print("Hello World".istitle())     # True
+print("my_var".isidentifier())     # True
