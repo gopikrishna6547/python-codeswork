@@ -69,5 +69,22 @@ if __name__ == "__main__":
     password =input("please enter the password:")
     while login (user_name=account ,password=password):
         print(*operations)
+        choice = int(input("please select your operation:"))
+        if choice ==1:
+            balance(user_name=account)
+        elif choice ==2:
+            withdraw(user_name=account ,withdraw_amount=0)    
+        elif choice ==3:
+            deposit(user_name=account , deposit_amount =0)
+        elif choice ==4:
+            transfer(user_name=account , transfer_amount=0)
+        elif choice ==5:
+            ministatement(user_name=account )
+        elif choice ==6:
+            logout()
+        else :
+            print("please enter between 1-6") 
+
+
         break
 
